@@ -21,6 +21,6 @@ Things you may want to cover:
 
 * Deployment instructions
 
-https://app.codeship.com/projects/0e7071b0-2f3e-0138-fbf1-36d478cfc868/status?branch=master
+[![Codeship Status for Evan2260/project](https://app.codeship.com/projects/0e7071b0-2f3e-0138-fbf1-36d478cfc868/status?branch=master)](https://app.codeship.com/projects/385038)
 * ...
 # project
