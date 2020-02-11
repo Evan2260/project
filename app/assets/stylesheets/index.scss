@@ -1,0 +1,29 @@
+.map-display{
+  border-style: solid;
+  color: green;
+  width: 45%;
+  height: 640px;
+  padding: 20px;
+  margin: 50px;
+}
+
+.info-display{
+  border-style: solid;
+  position: fixed;
+  top: 200px;
+  right: 0;
+  color: blue;
+  width: 45%;
+  height: 640px;
+  margin: 50px;
+}
+
+.mini-info{
+  border-style: solid;
+  position: fixed;
+  right: 0;
+  color: purple;
+  width: 35%;
+  height: 100px;
+  margin: 60px;
+}
