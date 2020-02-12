@@ -1,5 +1,5 @@
 import React from 'react'
-import MapContainer from './MapContainer'
+
 import InfoContainer from './InfoContainer'
 
 
@@ -9,7 +9,6 @@ const Indexpage = (props) => {
     <div>
       <h1>This is the index page</h1>
         <div>
-          <MapContainer />
           <InfoContainer />
         </div>
     </div>
