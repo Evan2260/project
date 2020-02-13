@@ -1,12 +1,20 @@
 import React from 'react'
+import InfoTile from './InfoTile'
 
-
-const InfoContainer = (props) => {
+const InfoContainer = ({ restroomData }) => {
+  let { id, business_name, location, restroom_image, sanitation } = restroomData
 
   return(
     <div>
       <div className="info-display">
-        <h4>Info Tile</h4>
+        <h4>Info Container</h4>
+        <InfoTile
+          id={id}
+          key={id}
+          name={business_name}
+          address={location}
+          image={restroom_image}
+        />
       </div>
     </div>
   )
