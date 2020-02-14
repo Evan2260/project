@@ -9,21 +9,55 @@
 
 .info-display{
   border-style: solid;
-  position: fixed;
+  background-color: white;
   top: 110px;
   right: 0;
   color: blue;
-  width: 45%;
-  height: 640px;
+  width: 93%;
+  height: 500px;
   margin: 50px;
 }
 
 .mini-info{
-  border-style: solid;
-  position: fixed;
-  right: 0;
+  text-align: center;
+  // border-style: solid;
+  // position: abolute;
+  // right: 100;
   color: purple;
-  width: 35%;
-  height: 100px;
+  width: 20%;
+  height: 50%;
   margin: 60px;
+  text-shadow: 2px 2px 15px #000000;
+}
+
+.index-div{
+  display: inline-block;
+  margin: 300px, 10px
+}
+
+.image-tile {
+  position: relative;
+  display: inline-flex;
+  margin: 8px;
+  transition: .2s;
+  z-index: 2;
+}
+
+.index-img {
+  position: relative;
+  width: 350px;
+  height: 250px;
+  border: 5px solid #fff;
+  outline: 1px solid #ccc;
+}
+
+.parallax {
+  background-image: url("https://sugar4spite.com/wp-content/uploads/2019/04/poop-600x600.jpg");
+
+  height: 2000px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
