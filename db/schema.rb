@@ -28,9 +28,13 @@ ActiveRecord::Schema.define(version: 2020_02_14_195101) do
   end
 
   create_table "reviews", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "restroom_id", null: false
     t.text "comment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["restroom_id"], name: "index_reviews_on_restroom_id"
+    t.index ["user_id"], name: "index_reviews_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
