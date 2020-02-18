@@ -1,10 +1,11 @@
-// import React from 'react'
-// import ReviewsForm from 'ReviewsForm'
-//
-// const ReviewsTile = (props) => {
-//   return(
-// <h1>This is the review tile</h1>
-//   )
-// }
-//
-// export default ReviewsTile
+import React from 'react'
+
+const ReviewsTile = (props) => {
+  return(
+    <div>
+      <h1>This is the review tile</h1>
+    </div>
+  )
+};
+
+export default ReviewsTile
