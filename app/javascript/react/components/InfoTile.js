@@ -6,7 +6,9 @@ const InfoTile = (props) => {
   return(
 
     <span className="mini-info">
-      <img src={props.image} className="index-img" />
+      <Link to={`/restrooms/${props.id}`} >
+        <img src={props.image} className="index-img" />
+      </Link>
       <div className="index-image-text">
         <div className="course-title-text">
           <h3>{props.name}</h3>
