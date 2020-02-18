@@ -8,6 +8,7 @@ class CreateRestrooms < ActiveRecord::Migration[5.2]
       t.boolean :payment
       t.boolean :paying_customer
       t.boolean :employee_only
+      t.belongs_to :user, null: false
 
       t.timestamps
     end
