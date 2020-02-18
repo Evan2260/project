@@ -1,4 +1,7 @@
 class Restroom < ApplicationRecord
+  belongs_to :user
+  has_many :reviews
+
   validates :business_name, presence: true
   validates :business_name, uniqueness: true
   validates :location, presence: true

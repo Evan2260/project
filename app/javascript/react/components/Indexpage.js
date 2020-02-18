@@ -27,7 +27,7 @@ const Indexpage = (props) => {
   const restroomSquares = restrooms.map((toilet) => {
 
     return(
-      <div className="row index-div">
+      <div key={toilet.id} className="row index-div">
         <InfoContainer
           key={toilet.id}
           id={toilet.id}
@@ -38,7 +38,6 @@ const Indexpage = (props) => {
   });
   return(
     <div className="parallax">
-      <h4>Index</h4>
         <div className="grid-container">
           <div>{restroomSquares}</div>
         </div>

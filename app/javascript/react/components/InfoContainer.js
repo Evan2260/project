@@ -7,7 +7,6 @@ const InfoContainer = ({ restroomData }) => {
   return(
     <div>
       <div className="info-display">
-        <h4>Info Container</h4>
         <InfoTile
           id={id}
           key={id}
