@@ -3,11 +3,13 @@ import _ from 'lodash'
 import ErrorsList from './ErrorsList'
 
 const ReviewsForm = (props) => {
-debugger
+
   const[reviewRecord, setReviewRecord] = useState({
     rating: "",
     review: ""
   });
+
+  const[errors, setErrors] = useState({})
 
   const handleChange = (event) => {
     setReviewRecord({
@@ -42,11 +44,10 @@ debugger
 
   return(
     <div>
-      <form>
+      <form onSubmit={handleSubmit}>
 
-        <ErrorsList errors={errors} />
 
-        <label>Review
+        <label>Have you used this restroom? Write your review here:
           <input
             type="text"
             name="review"
@@ -57,7 +58,7 @@ debugger
 
         <input
           type="hidden"
-          name="albumId"
+          name="restroomId"
           value={props.restroomId}
         />
 
