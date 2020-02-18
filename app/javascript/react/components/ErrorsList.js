@@ -2,6 +2,7 @@ import React from 'react'
 import _ from 'lodash'
 
 const ErrorsList = (props) => {
+  
   const errantFields = Object.keys(props.errors)
 
   if (errantfields.length > 0){
