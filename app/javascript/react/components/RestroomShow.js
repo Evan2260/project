@@ -19,4 +19,5 @@ const RestroomShow = ({ restroomObject }) => {
   )
 };
 
+
 export default RestroomShow
