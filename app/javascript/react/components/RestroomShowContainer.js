@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import RestroomShow from './RestroomShow'
 import ReviewsTile from './ReviewsTile'
 import ReviewsForm from './ReviewsForm'
+import MapContainer from './MapContainer'
 
 const RestroomShowContainer = (props) => {
   const [ restroom, setRestroom ] = useState([])
@@ -75,9 +76,17 @@ const RestroomShowContainer = (props) => {
         onSubmit={submitNewReview}
         restroomId={props.match.params.id}
       />
+    <div className="map-display">
+      <MapContainer
+        googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyArHw2cFpooL6LryK0VR1A83O0v5hSeBIk&v=3.exp&libraries=geometry,drawing,places"
+        isMarkerShown
+        loadingElement={<div style={{ height: `100px` }} />}
+        containerElement={<div style={{ height: `100px` }} />}
+        mapElement={<div style={{ height: `550px`, width: `50%%`, float: `center` }} />}
+      />
+  </div>
     </div>
   )
-
 };
 
 export default RestroomShowContainer

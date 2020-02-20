@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import InfoContainer from './InfoContainer'
 import InfoTile from './InfoTile'
+import MapContainer from './MapContainer'
 import { Link } from "react-router-dom"
 
 const Indexpage = (props) => {
@@ -37,10 +38,22 @@ const Indexpage = (props) => {
     )
   });
   return(
-    <div className="parallax">
+    <div>
+      <div className="map-display">
+        <MapContainer
+          googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyArHw2cFpooL6LryK0VR1A83O0v5hSeBIk&v=3.exp&libraries=geometry,drawing,places"
+          isMarkerShown
+          loadingElement={<div style={{ height: `100px` }} />}
+          containerElement={<div style={{ height: `100px` }} />}
+          mapElement={<div style={{ height: `550px`, width: `50%%`, float: `center` }} />}
+        />
+      </div>
+
+      <div className="parallax">
         <div className="grid-container">
           <div>{restroomSquares}</div>
         </div>
+      </div>
     </div>
   )
 };
